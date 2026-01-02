@@ -1,0 +1,16 @@
+def check_for_line():
+    word = "programming"
+    with open("practice.txt", "r") as f:
+        line_no = 1
+        for line in f:
+            if word in line:
+                print(line_no)
+                return
+            line_no += 1
+    return -1
+
+check_for_line()
+ 
+
+
+

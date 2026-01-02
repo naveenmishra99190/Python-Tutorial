@@ -1,0 +1,10 @@
+# question - WAP that replace all occurences pf "java" with "python" in file.
+
+with open ("practice.txt", "r") as f:
+    data = f.read()
+
+new_data = data.replace("java", "python")
+print(new_data)
+
+with open ("practice.txt", "w") as f:
+    data = f.write(new_data)
